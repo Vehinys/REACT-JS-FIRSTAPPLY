@@ -1,16 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import Header from "./header.jsx";
-import User from "./User";
+import "./App.css";
+import Header from "./Components/Header";
+import Counter from "./Components/Counter";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <>
-    <User name="Albert" expertise="Fronted Developer" />
-    <User name="Geoffroy" expertise="Back-end Developer" />
-    <User name="Pauline" expertise="Full stack Developer" />
-    <User name="Kenza" expertise="Full stack Developer" />
+    <Header />
+    <Counter />
   </>
 );
 
