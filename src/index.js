@@ -1,17 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./App.css";
-import Header from "./Components/Header";
-import Counter from "./Components/Counter";
+import "./App.css"; // Ton fichier de styles principal
+import App from "./App"; // Le composant principal
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(
-  <>
-    <Header />
-    <Counter />
-  </>
-);
+const root = ReactDOM.createRoot(document.getElementById("root")); // Rendu dans "root"
+root.render(<App />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
